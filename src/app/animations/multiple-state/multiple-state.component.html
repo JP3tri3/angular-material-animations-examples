@@ -1,4 +1,9 @@
-<div class="test-box" [@photoState]="position"></div>
+<div
+  class="test-box"
+  [@photoState]="position"
+  (@photoState.start)="logAnimation($event)"
+  (@photoState.done)="logAnimation($event)"
+></div>
 
 <button (click)="changePosition('move')" class="button">Translate</button>
 <button (click)="changePosition('spin')" class="button">Rotate</button>

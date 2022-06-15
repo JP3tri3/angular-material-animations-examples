@@ -70,4 +70,9 @@ export class MultipleStateComponent implements OnInit {
   changePosition(newPosition: string) {
     this.position = newPosition;
   }
+
+  // capture animation start / done events
+  logAnimation(event: any) {
+    console.log('start done event: ', event);
+  }
 }
