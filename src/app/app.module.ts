@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShowHideTransitionComponent } from './animations/show-hide-transition/show-hide-transition.component';
 import { MultipleStateComponent } from './animations/multiple-state/multiple-state.component';
+import { ListComponent } from './animations/list/list.component';
 
 @NgModule({
-  declarations: [AppComponent, ShowHideTransitionComponent, MultipleStateComponent],
+  declarations: [AppComponent, ShowHideTransitionComponent, MultipleStateComponent, ListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
